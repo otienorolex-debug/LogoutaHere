@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LogOuttaHere</title>
+</head>
+<body>
+
+  <div class="app-card">
+    <div class="header">
+      <div class="brand-name">LogOuttaHere</div>
+      <div class="tagline">One click. Logged out. Everywhere.</div>
+    </div>
+
+    <div class="form-group">
+      <label for="userEmail">Enter Connected Email Address</label>
+      <input type="email" id="userEmail" placeholder="alex@example.com" autocomplete="off" required>
+    </div>
+
+    <button id="actionBtn" class="btn-action">Scan & Terminate Sessions</button>
+
+    <div id="statusPanel" class="status-panel">
+      <div id="statusText" class="status-text">Analyzing active tokens...</div>
+      <div class="progress-container">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+      <div id="resultsSummary" class="results-box">
+        <span>Platforms Cleared:</span>
+        <span id="purgeCount" class="success-badge">0</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="privacy-notice">
+    🔒 Zero-knowledge operation. Scanning and session termination execute entirely on your machine.
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

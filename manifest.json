@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "LogOuttaHere",
+  "version": "1.0",
+  "description": "Paste your email and instantly sign out of everything.",
+  "permissions": [
+    "cookies",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*://",
+    "https://*://",
+    "https://*://",
+    "https://*://"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
